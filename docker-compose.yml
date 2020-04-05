@@ -1,0 +1,14 @@
+# Only for local deployment!
+version: "3"
+
+services:
+  python:
+    build:
+      dockerfile: docker/python/Dockerfile
+      context: .
+    stdin_open: true
+    tty: true
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/code
