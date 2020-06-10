@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load humanize %}
 {% load static %}
+{% load i18n %}
 
 {% block nav2 %}
 <nav class="flex bg-hospitalaid-blue-dark p-3 text-white">
@@ -24,7 +25,7 @@
   <div class="flex font-bold">
     <div class="flex-grow">
       <div class="text-xs">
-        MANAGER
+        {% trans "MANAGER" %}
       </div>
       <div>
         {{ object.hospital.user.get_full_name}}
@@ -32,7 +33,7 @@
     </div>
     <div class="flex-grow text-right">
       <div class="text-xs">
-        PHONE
+        {% trans "PHONE" %}
       </div>
       <div>
         {{ object.hospital.user.phone }}
@@ -42,7 +43,8 @@
   <div class="flex-grow flex-col justify-center w-full">
     {% static "images/heart.svg" as heart_icon %}
     {% with "tel:"|add:object.hospital.user.phone as tel_url %}
-    {% include "includes/button-link.html" with image=heart_icon color="red" href=tel_url label="Call to help" %}
+    {% trans "Call to help" as label %}
+    {% include "includes/button-link.html" with image=heart_icon color="red" href=tel_url label=label %}
     {% endwith %}
   </div>
 </div>

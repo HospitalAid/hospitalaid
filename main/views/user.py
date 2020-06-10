@@ -27,7 +27,7 @@ class Signup(FormView):
         user, created = User.objects.get_or_create(email=email)
         login_token = utils.get_query_string(user)
 
-        logo_url = "/static/images/logo-vertical.svg"
+        logo_url = "/static/images/logo-vertical.png"
         logo_src = "http://{}{}".format(self.request.get_host(), logo_url)
         login_link = "http://{}/{}".format(self.request.get_host(), login_token)
 

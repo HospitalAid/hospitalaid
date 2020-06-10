@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-09 21:39+0000\n"
+"POT-Creation-Date: 2020-06-09 18:58-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,33 +28,31 @@ msgstr ""
 
 #: main/forms/main.py:44
 msgid "name"
-msgstr ""
+msgstr "nome"
 
 #: main/forms/main.py:45
 msgid "phone"
-msgstr ""
+msgstr "telefone"
 
 #: main/forms/main.py:46
-#, fuzzy
-#| msgid "serial number"
 msgid "hospital name"
-msgstr "número de série"
+msgstr "nome do hospital"
 
 #: main/forms/main.py:47
 msgid "hospital address"
-msgstr ""
+msgstr "endereço do hospital"
 
 #: main/forms/main.py:48
 msgid "hospital city"
-msgstr ""
+msgstr "cidade do hospital"
 
 #: main/forms/main.py:49
 msgid "hospital postcode"
-msgstr ""
+msgstr "CEP do hospital"
 
 #: main/forms/main.py:50
 msgid "hospital country"
-msgstr ""
+msgstr "país do hospital"
 
 #: main/models/main.py:52
 msgid "New equipment/supply request"
@@ -231,6 +229,18 @@ msgstr "Sim, por favor"
 #: main/templates/main/aidrequest_confirm_delete.html:12
 msgid "No, thanks"
 msgstr "Não, obrigado"
+
+#: main/templates/main/aidrequest_detail.html:28
+msgid "MANAGER"
+msgstr "RESPONSÁVEL"
+
+#: main/templates/main/aidrequest_detail.html:36
+msgid "PHONE"
+msgstr "TELEFONE"
+
+#: main/templates/main/aidrequest_detail.html:46
+msgid "Call to help"
+msgstr "Ligue para ajudar"
 
 #: main/templates/main/aidrequest_detail_hospital.html:23
 msgid "Choose status"
