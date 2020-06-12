@@ -5,6 +5,7 @@ name = "pypi"
 
 [dev-packages]
 pre-commit = "*"
+django-webtest = "*"
 
 [packages]
 Django = "*"
@@ -25,6 +26,3 @@ honcho = "*"
 sentry-sdk = "*"
 structlog = "*"
 colorama = "*"
-
-[requires]
-python_version = "3.7"
