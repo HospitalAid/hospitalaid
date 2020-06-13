@@ -13,7 +13,7 @@ jobs:
       - run:
           command: |  # use pipenv to install dependencies
             sudo pip install pipenv
-            pipenv install
+            pipenv install --dev
       - save_cache:
           key: deps-{{ checksum "Pipfile.lock" }}
           paths:
